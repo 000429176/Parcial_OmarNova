@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Parcial_OmarNova"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Frame Name="frameMain" Content="" HorizontalAlignment="Center" Height="434" VerticalAlignment="Center" Width="800" NavigationUIVisibility="Hidden" Loaded="frameMain_Loaded"/>
+    <Grid Width="800" MinWidth="800" MinHeight="434.04" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+        <Frame Name="frameMain" Content="" HorizontalAlignment="Center" Height="434" VerticalAlignment="Top" Width="800" NavigationUIVisibility="Hidden" Loaded="frameMain_Loaded" MinWidth="800" MinHeight="434" Margin="0,-13,0,0"/>
 
 
     </Grid>

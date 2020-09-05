@@ -8,19 +8,15 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Login">
 
-    <Grid>
-        <Image HorizontalAlignment="Left" Height="486" VerticalAlignment="Top" Width="854" Source="/Fondo.png" Stretch="UniformToFill" Margin="-40,-21,0,0"/>
-        <Image HorizontalAlignment="Left" Height="365" Margin="281,36,0,0" VerticalAlignment="Top" Width="324" Source="/Rectángulo 1.png"/>
-        <Button Name="btnLogin" Content="Iniciar Sesión" HorizontalAlignment="Left" Height="28" Margin="322,316,0,0" VerticalAlignment="Top" Width="173" BorderBrush="#FF9C9C9C"  Background="#FFE8B60D" FontFamily="Aleo" Foreground="White" Click="btnLogin_Click" />
-        <Label Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="335,57,0,0" VerticalAlignment="Top" FontFamily="Aleo" FontSize="22"/>
-        <Label Content="Usuario" HorizontalAlignment="Left" Margin="306,130,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB"/>
-        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="306,206,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontWeight="Regular" FontStyle="Normal"/>
-        <TextBox Name="txtUsername" HorizontalAlignment="Left" Height="25" Margin="321,159,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
-        <TextBox Name="txtPassword" HorizontalAlignment="Left" Height="24" Margin="321,240,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" FontFamily="Arial"/>
-        
-
-
-
+    <Grid MinWidth="800" MinHeight="434.04" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+        <Image HorizontalAlignment="Stretch" Height="486" VerticalAlignment="Stretch" Width="854" Source="/Fondo.png" Stretch="UniformToFill" Margin="-40,-21,0,0" />
+        <Image HorizontalAlignment="Left" Height="365" Margin="260,29,0,0" VerticalAlignment="Top" Width="324" Source="/Rectángulo 1.png"/>
+        <Button Name="btnLogin" Content="Iniciar Sesión" HorizontalAlignment="Left" Height="28" Margin="301,309,0,0" VerticalAlignment="Top" Width="173" BorderBrush="#FF9C9C9C"  Background="#FFE8B60D" FontFamily="Aleo" Foreground="White" Click="btnLogin_Click" />
+        <Label Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="314,50,0,0" VerticalAlignment="Top" FontFamily="Aleo" FontSize="22"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="285,123,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="285,199,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontWeight="Regular" FontStyle="Normal"/>
+        <TextBox Name="txtUsername" HorizontalAlignment="Left" Height="25" Margin="300,152,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <PasswordBox Name="txtPassword" HorizontalAlignment="Left" Height="28" Margin="300,227,0,0" VerticalAlignment="Top" Width="173"/>
 
     </Grid>
 </Page>

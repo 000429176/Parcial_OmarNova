@@ -25,11 +25,13 @@ namespace Parcial_OmarNova
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (txtUsername.Text=="Admin" && txtPassword.Text=="1234")
+            if (txtUsername.Text=="Admin" && txtPassword.Password =="1234")
             {
-
+                MainWindow login = (MainWindow)Window.GetWindow(this);
+                login.frameMain.NavigationService.Navigate(new Administradora());
+                txtUsername.Text = txtUsername.Text;
             }
-            else if (txtUsername.Text == "Trabajador" && txtPassword.Text == "5678")
+            else if (txtUsername.Text == "Trabajador" && txtPassword.Password == "5678")
             {
 
             }
@@ -38,5 +40,7 @@ namespace Parcial_OmarNova
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
         }
+
+   
     }
 }

@@ -8,14 +8,18 @@
 
   <ItemGroup>
     <None Remove="Componente 2 – 1.png" />
+    <None Remove="Fondo - copia.png" />
     <None Remove="Fondo.png" />
     <None Remove="Rectángulo 1.png" />
+    <None Remove="Rectángulo 2.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Componente 2 – 1.png" />
+    <Resource Include="Fondo - copia.png" />
     <Resource Include="Fondo.png" />
     <Resource Include="Rectángulo 1.png" />
+    <Resource Include="Rectángulo 2.png" />
   </ItemGroup>
 
 </Project>
