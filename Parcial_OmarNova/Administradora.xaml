@@ -23,6 +23,8 @@
         <Label Content="Productos Vendidos:" HorizontalAlignment="Left" Margin="119,131,0,0" VerticalAlignment="Top" Height="38" Width="190" FontFamily="Aleo" FontSize="18"/>
         <Label Content="Ganancias Obtenidas:" HorizontalAlignment="Left" Margin="119,202,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="18" FontFamily="Aleo"/>
         <Label Content="Clientes :" HorizontalAlignment="Left" Margin="119,267,0,0" VerticalAlignment="Top" Height="31" Width="124" FontFamily="Aleo" FontSize="18"/>
-        <TextBlock Name="txtUsername" HorizontalAlignment="Right" Height="35" Margin="0,140,332,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <TextBlock Name="txtProductos" HorizontalAlignment="Right" Height="35" Margin="0,131,361,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"><Run Language="es-co" Text="Hola"/></TextBlock>
+        <TextBlock Name="txtGanancias" HorizontalAlignment="Left" Height="34" Margin="329,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"><Run Language="es-co" Text="HOLA"/></TextBlock>
+        <TextBlock Name="txtClientes" HorizontalAlignment="Left" Height="123" Margin="214,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="472" Text=""/>
     </Grid>
 </Page>

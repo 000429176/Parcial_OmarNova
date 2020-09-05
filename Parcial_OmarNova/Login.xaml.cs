@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,6 +22,7 @@ namespace Parcial_OmarNova
         public Login()
         {
             InitializeComponent();
+            
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
@@ -29,18 +31,22 @@ namespace Parcial_OmarNova
             {
                 MainWindow login = (MainWindow)Window.GetWindow(this);
                 login.frameMain.NavigationService.Navigate(new Administradora());
-                txtUsername.Text = txtUsername.Text;
+                
+                
             }
-            else if (txtUsername.Text == "Trabajador" && txtPassword.Password == "5678")
+            else if (txtUsername.Text == "Trabajadora" && txtPassword.Password == "5678")
             {
-
+                MainWindow login = (MainWindow)Window.GetWindow(this);
+                login.frameMain.NavigationService.Navigate(new Trabajadora());
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
         }
-
+       
    
     }
+
+
 }
