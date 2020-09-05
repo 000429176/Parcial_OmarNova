@@ -28,14 +28,63 @@ namespace Parcial_OmarNova
             cmbPanes.Items.Add("Aliñados");
             cmbPanes.Items.Add("No Aliñado");
             cmbPanes.Items.Add("Especial");
-            DateTime tiempo = DateTime.Now;
+            
+            
+        }
+        Double ventasTotales,contador;
+        List<String> ventas = new List<string>();
+        DateTime tiempo = DateTime.Now;
+        List<String> clientesVendidos = new List<string>();
 
+        private void ir_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow login = (MainWindow)Window.GetWindow(this);
+            login.frameMain.NavigationService.Navigate(new Administradora());
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Double Precio, cantidad;
+            contador += 1;
+            ventas.Add(txtNombreCliente.Text);
+            ventas.Add(txtCedula.Text);
+            ventas.Add(cmbPanes.Text);
+            clientesVendidos.Add(txtNombreCliente.Text);
 
-        
-        
-        
-        
+            if (cmbPanes.Text == "Aliñados")
+            {
+                cantidad = Convert.ToDouble(txtCantidadPanes.Text);
+                Precio = cantidad * 1000;
+                ventasTotales += Precio;
+                ventas.Add(Precio + " Pesos");
+
+            }
+            else if (cmbPanes.Text == "No Aliñado")
+            {
+                cantidad = Convert.ToDouble(txtCantidadPanes.Text);
+                Precio = cantidad * 500;
+                ventasTotales += Precio;
+                ventas.Add(Precio + " Pesos");
+
+            }
+            else
+            {
+                cantidad = Convert.ToDouble(txtCantidadPanes.Text);
+                Precio = cantidad * 2000;
+                ventasTotales += Precio;
+                ventas.Add(Precio + " Pesos");
+
+            }
+            ventas.Add(tiempo.ToString());
+
+            txtRegistro.Text = String.Join("\n", ventas);
+            txtResumen.Text = ("Ventas Totales = " + contador + "\n" + "Ganancias Obtenidas = " + ventasTotales + " Pesos" );
+
+            Administradora admin = new Administradora();
+            admin.txtProductos.Text = Convert.ToString(contador);
+            admin.txtGanancias.Text = Convert.ToString(ventasTotales);
+            admin.txtClientes.Text = String.Join(",", clientesVendidos);
+
+        }
     }
 }

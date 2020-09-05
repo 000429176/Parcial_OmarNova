@@ -23,11 +23,15 @@
         <Label Content="Cédula:" HorizontalAlignment="Left" Margin="198,133,0,0" VerticalAlignment="Top" FontFamily="Aleo" FontSize="14"/>
         <TextBox Name="txtNombreCliente" HorizontalAlignment="Left" Height="25" Margin="280,88,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
         <TextBox Name="txtCedula" HorizontalAlignment="Left" Height="25" Margin="280,135,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
-        <Label Content="Pan:" HorizontalAlignment="Left" Margin="218,186,0,0" VerticalAlignment="Top" FontFamily="Aleo" FontSize="14"/>
-        <ComboBox Name="cmbPanes" HorizontalAlignment="Left" Margin="280,191,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Vender Producto" HorizontalAlignment="Left" Margin="270,264,0,0" VerticalAlignment="Top" Width="130" FontFamily="Aleo" Background="#FFE8B60D" Height="26" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="264" Margin="523,86,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <Label Content="Pan:" HorizontalAlignment="Left" Margin="218,220,0,0" VerticalAlignment="Top" FontFamily="Aleo" FontSize="14"/>
+        <ComboBox Name="cmbPanes" HorizontalAlignment="Left" Margin="280,225,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Vender Producto" HorizontalAlignment="Left" Margin="270,324,0,0" VerticalAlignment="Top" Width="130" FontFamily="Aleo" Background="#FFE8B60D" Height="26" Foreground="White" Click="Button_Click"/>
+        <TextBlock Name="txtRegistro" HorizontalAlignment="Left" Height="224" Margin="514,88,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" IsHitTestVisible="False"/>
         <Label Content="Registros de Ventas" HorizontalAlignment="Left" Margin="544,56,0,0" VerticalAlignment="Top" FontFamily="Aleo" FontSize="14"/>
+        <Label Content="Cantidad de panes:" HorizontalAlignment="Left" Margin="126,176,0,0" VerticalAlignment="Top" FontFamily="Aleo" FontSize="14"/>
+        <TextBox Name="txtCantidadPanes" HorizontalAlignment="Left" Height="25" Margin="280,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBlock Name="txtResumen" HorizontalAlignment="Left" Height="39" Margin="514,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+
 
     </Grid>
 </Page>
